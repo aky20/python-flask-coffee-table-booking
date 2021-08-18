@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="main_header">Welcome to Cafe</h1>
+
+<form class="form_4" method="POST" action="{{ url_for('list') }}">
+<div class="input_fields">
+    <h1>Table Booking</h1>
+    {{ form.csrf_token }}
+    {{ form.name }}
+    {{ form.phone_number }}
+    {{ form.total_consumers }}
+    <div class="radio_container">
+    {% for floor in form.floors %}
+    <tr>
+        <td>{{ floor }}</td>
+        <td>{{ floor.label }}</td>
+    </tr>
+    {% endfor %}
+    </div>
+    {{ form.time }}
+</div>
+<button type="submit" class="sink_md_btn">
+    Book
+</button>
+</form>
+
+
+{% endblock %}

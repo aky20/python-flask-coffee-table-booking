@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1 class="main_header">Booking List</h1>
+
+<table class="table_1">
+  <tr>
+    <th>Name</th>
+    <th class="extra">Phone_number</th>
+    <th class="extra">Total_Consumers</th>
+    <th class="extra">Floor</th>
+    <th class="extra">Time</th>
+    <th class="table_more_column">More</th>
+  </tr>
+  {% for data in form_data %}
+  <tr>
+    <td>{{data['name']}}</td>
+    <td class="extra">{{data['phone_number']}}</td>
+    <td class="extra">{{data['total_consumers']}}</td>
+    <td class="extra">{{data['floors']}}</td>
+    <td class="extra">{{data['time']}}</td>
+    <td class="table_more_column">
+        <p><span>Phone number : </span>{{data['phone_number']}}</p>
+        <p><span>Total Consumers : </span>{{data['total_consumers']}}</p>
+        <p><span>Floor : </span>{{data['floors']}}</p>
+        <p><span>Time : </span>{{data['time']}}</p>
+    </td>
+  </tr>
+  {% endfor %}
+
+</table>
+
+{% endblock %}

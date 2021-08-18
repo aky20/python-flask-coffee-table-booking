@@ -1,0 +1,112 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.main_header{
+    text-align: center;
+}
+.form_4{
+    background-color: #fff;
+    width: 300px;
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: lightcoral;
+    margin: auto;
+}
+.form_4 h1{
+    font-size: 1.7rem;
+    margin: 0 0 30px 0;
+    color: lightcoral;
+}
+.form_4 .input_fields{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.form_4 input::placeholder{
+    color: lightcoral;
+}
+.form_4 input{
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border-style: none none solid none;
+    border-width: 2px;
+    padding: 0 0 8px 0;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+    color: lightcoral;
+    margin-bottom: 20px;
+}
+.form_4 input:focus{
+    padding: 0 0 10px 5px;
+}
+.form_4 .sink_md_btn{
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    background-color: lightcoral;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    padding: 11px 12px;
+    border-radius: 5px;
+    box-shadow: inset 2px 3px 4px -1px #af3b3b;
+}
+.form_4 .sink_md_btn:hover{
+    background-color: rgb(216, 113, 113);
+    box-shadow: inset 2px 2px 3px 0px #963232;
+}
+@media only screen and (max-width: 600px) {
+    .form_4{
+        width: 90%;
+        padding: 30px 15px;
+    }
+    .form_4 h1{
+        font-size: 1.4rem;
+    }
+}
+
+.table_1{
+    text-align: left;
+    width: 70%;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-collapse: collapse;
+    margin: auto;
+}
+.table_1 th{
+    font-weight: normal;
+    background-color: #5b5c5a;
+    color: #fff;
+    padding: 15px 10px;
+}
+.table_1 td{
+    background-color: #fff;
+    padding: 10px 10px;
+}
+.table_1 td p{
+    margin: 0;
+}
+.table_more_column{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .table_1{
+        width: 90%;
+        font-size: 0.7rem;
+    }
+    .table_1 .extra{
+        display: none;
+    }
+    .table_more_column{
+        display: block;
+    }
+    .table_1 span{
+        color: #5b5c5a;
+    }
+}
